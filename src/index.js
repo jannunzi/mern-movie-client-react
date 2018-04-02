@@ -55,6 +55,8 @@ class Main extends React.Component {
             <Router>
                 <div className="container-fluid">
                     <h1>Main</h1>
+                    <Link to="/movies">Movies</Link>
+                    |
                     <Link to="/page1">Page 1</Link>
                     |
                     <Link to="/page2">Page 2</Link>
@@ -69,6 +71,7 @@ class Main extends React.Component {
                     |
                     <Link to="/pageid2/2">Page 2/2</Link>
                     <br/>
+                    <Route path="/movies" component={MernMovieClient}/>
                     <Route path="/page1" component={Component1}/>
                     <Route path="/page2" component={Component2}/>
                     <Route path="/page3" component={Component3}/>
